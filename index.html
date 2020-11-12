@@ -186,7 +186,7 @@
               <span class="post-meta-item-text">Posted on</span>
               
 
-              <time title="Created: 2020-11-12 16:20:15 / Modified: 16:23:51" itemprop="dateCreated datePublished" datetime="2020-11-12T16:20:15+08:00">2020-11-12</time>
+              <time title="Created: 2020-11-12 16:20:15 / Modified: 16:35:53" itemprop="dateCreated datePublished" datetime="2020-11-12T16:20:15+08:00">2020-11-12</time>
             </span>
 
           
@@ -200,10 +200,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p>Class Solution{<br>public:<br>    ListNode* addTwo(ListNode* l1,ListNode* l2){</p>
-<pre><code>&#125;
-ListNode* result;
-ListNode* head;</code></pre>
+          <p>Class Solution{<br>public:<br>    ListNode* addTwo(ListNode* l1,ListNode* l2){<br>        ListNode* result,ans;<br>    ListNode* head = new ListNode();<br>    result = head;<br>    int tag = 0;<br>    while(l1&amp;&amp;l2){<br>            ans = new ListNode();<br>        ans-&gt;val = (tag + l1-&gt;val + l2-&gt;val)%10;<br>        tag = (tag + l1-&gt;val + l2-&gt;val)/10;<br>        result-&gt;next = ans;<br>        result = result-&gt;next;<br>        l1 = l1-&gt;next;<br>        l2 = l2-&gt;next;<br>    }<br>    }<br>    ListNode* result;<br>    ListNode* head;</p>
 <p>}</p>
 
       
